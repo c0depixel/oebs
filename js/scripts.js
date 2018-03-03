@@ -29,7 +29,34 @@
       }
     }
 
-    $('.lang-picker-toggle').dropdown();
+    $('.lang-picker-toggle').dropdown()
+
+    var timers = document.querySelectorAll('.countdown-timer');
+
+    timers.forEach(function (timer) {
+
+      var endDate = timer.dataset.date;
+      var countDownDate = new Date(endDate).getTime();
+      var interval = setInterval(function() {
+
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+        timer.querySelector('.days .num').innerHTML = days;
+        timer.querySelector('.hours .num').innerHTML = hours;
+        timer.querySelector('.minutes .num').innerHTML = minutes;
+
+        if (distance < 0) {
+          clearInterval(interval);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+
+      }, 1000);
+
+    });
 
   });
 
