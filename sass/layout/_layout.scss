@@ -25,11 +25,6 @@ a {
   background-color: $primary-color
 }
 
-ul, ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
 .noscroll {
   position: fixed;
@@ -375,6 +370,9 @@ video {
   > ul {
     display: flex;
     align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     > li {
       display: flex;
       align-items: center;
@@ -397,6 +395,9 @@ video {
         left: 0;
         width: 250px;
         background: $primary-color;
+        list-style: none;
+        margin: 0;
+        padding: 0;
         li {
           position: relative;
           &.active {
@@ -405,6 +406,9 @@ video {
           ul {
             top: 0;
             left: 100%;
+            list-style: none;
+            margin: 0;
+            padding: 0;
           }
           &:hover {
             ul {
@@ -481,11 +485,11 @@ body.fixed-header {
 }
 
 .main-content {
-  padding: 30px;
-  background: #fff;
   margin-bottom: 30px;
-  overflow: hidden;
   .latest-news {
+    background: #fff;
+    padding: 30px;
+    overflow: hidden;
     .news-header {
       position: relative;
       z-index: 1;
@@ -592,6 +596,61 @@ body.fixed-header {
   }
 }
 
+.content-section {
+  background: #fff;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+}
+
+.content-header {
+  background: $primary-color;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  .header-breadcrumb {
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
+    padding-bottom: 10px;
+    ul {
+      display: flex;
+      color: lighten($primary-color, 40%);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        color: lighten($primary-color, 40%);
+        &:first-child {
+          &:before {
+            display: none;
+          }
+        }
+        &:before {
+          display: inline-block;
+          padding-right: 0.5rem;
+          padding-left: 0.5rem;
+          color: lighten($primary-color, 40%);
+          content: "/";
+        }
+        a {
+          color: lighten($primary-color, 40%);
+        }
+        &.active {
+          color: #fff;
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .content-title {
+    h1 {
+      color: #fff;
+      margin: 0;
+      font-size: 36px;
+    }
+  }
+}
+
 .widget {
   background: #fff;
   padding: 20px;
@@ -659,6 +718,9 @@ body.fixed-header {
   }
   &.widget-list {
     ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
       li {
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         line-height: normal;
@@ -676,6 +738,9 @@ body.fixed-header {
   }
   &.widget-links {
     ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
       li {
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         line-height: normal;
@@ -875,6 +940,9 @@ body.fixed-header {
         }
       }
       ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
         li {
           margin-bottom: 10px;
           line-height: 18px;
