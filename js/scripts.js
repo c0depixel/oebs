@@ -51,7 +51,7 @@
 
         if (distance < 0) {
           clearInterval(interval);
-          document.getElementById("demo").innerHTML = "EXPIRED";
+          timer.innerHTML = "EXPIRED";
         }
 
       }, 1000);
