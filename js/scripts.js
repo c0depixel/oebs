@@ -5,6 +5,10 @@
       width: "100%"
     });
 
+    window.FontAwesomeConfig = {
+      searchPseudoElements: true
+    };
+
     var topBarHeight = $('.fixed-top-bar').height();
     var navigationHeight = $('.navigation-section').height();
     var headerOffset = $('.navigation-section').offset().top - topBarHeight;
