@@ -594,7 +594,7 @@ body.fixed-header {
 .content-section {
   background: #fff;
   margin-bottom: 30px;
-  padding: 20px 30px;
+  padding: 30px;
   text-align: justify;
   .details {
     font-weight: 400;
@@ -618,6 +618,16 @@ body.fixed-header {
       }
     }
   }
+}
+
+pre {
+  display: block;
+  font-size: 100%;
+  color: #212529;
+  overflow: auto;
+  font-family: Roboto;
+  border: none;
+  white-space: inherit;
 }
 
 .category-section {
@@ -1144,3 +1154,222 @@ body.fixed-header {
     }
   }
 }
+
+.ui-accordion {
+  font-family: Roboto;
+  margin: 20px 0;
+  .ui-accordion-header {
+    margin: 5px 0 0 0;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-weight: 500;
+    &.ui-state-active {
+      background: $primary-color;
+    }
+    .fa-chevron-down {
+      display: none;
+    }
+    &.ui-accordion-header-active {
+      .fa-chevron-down {
+        display: inline-block;
+      }
+      .fa-chevron-up {
+        display: none;
+      }
+    }
+    .accordions-head-title {
+      margin-left: 10px;
+    }
+  }
+  .ui-accordion .ui-accordion-content {
+    padding: 20px 30px;
+  }
+  .ui-accordion-header-icon {
+    display: none !important;
+  }
+  .ui-accordion-content {
+    padding: 20px;
+  }
+}
+
+
+.ui-widget-content {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.envira-gallery-wrap .envira-gallery-public {
+  margin: 20px 0 !important;
+}
+
+
+.content-section {
+}
+
+
+.faq-form {
+  background: $primary-color;
+  padding: 20px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+  color: #fff;
+  p {
+    margin: 0;
+  }
+  h4 {
+    position: relative;
+    z-index: 3;
+    margin: 0;
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 20px;
+    span {
+      display: inline-block;
+      background: $primary-color;
+      color: #fff;
+      font-weight: 700;
+      padding: 5px 0;
+    }
+  }
+  input[type="text"], input[type="email"] {
+    background: #fff;
+    height: 40px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+    max-width: 350px;
+  }
+  textarea {
+    background: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+    width:  100%;
+  }
+  div.wpcf7-response-output {
+    margin: 0;
+    list-style: none;
+    background: rgba(99, 198, 12, 0.6);
+    padding: 4px 8px;
+    font-size: 13px !important;
+    margin-top: 5px;
+    border-radius: 6px;
+    color: #fff !important;
+    line-height: normal;
+    border: none;
+    &.wpcf7-validation-errors, &.wpcf7-acceptance-missing, &.wpcf7-mail-sent-ng, &.wpcf7-aborted{
+      background: rgba(#ff2513, 0.6);
+    }
+  }
+  span.wpcf7-not-valid-tip {
+    color: #f00;
+    font-size: 13px;
+    font-weight: normal;
+    display: block;
+  }
+}
+
+
+.btn {
+  display: block;
+  padding: 0 10px;
+  margin: 0;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background: #ea6565;
+  border: none;
+  font-size: 13px;
+  border-radius: 0;
+  &:hover {
+    background: lighten(#000, 20%);
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background: #ea6565;
+  border-color: #ea6565;
+}
+
+
+
+
+.profile-wrap {
+  margin-bottom: 30px;
+  text-align: center;
+  .image {
+    margin-bottom: 10px;
+  }
+  .name {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .position {
+    font-size: 17px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.profiles {
+  .button-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    button {
+      display: block;
+      padding: 0 10px;
+      margin: 0;
+      margin-top: 10px;
+      line-height: 35px;
+      text-align: center;
+      cursor: pointer;
+      color: #fff;
+      background: $primary-color;
+      font-size: 13px;
+      margin-right: 5px;
+      background: rgba($primary-color, 0.5);
+      border: 1px solid rgba($primary-color, 0.5);
+      outline: none;
+      &.is-checked {
+        background: $primary-color;
+        color: #fff;
+      }
+      &:hover {
+        border: 1px solid rgba($primary-color, 1);
+        background: rgba($primary-color, 1);
+      }
+    }
+  }
+}
+
+.isotope {
+  margin: 0 -15px;
+  .isotope-sizer, .item {
+    width: 25%;
+    padding: 15px;
+    @include breakpoint(tablet) {
+      width: 50%;
+    }
+  }
+}
+
