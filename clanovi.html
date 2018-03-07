@@ -1,0 +1,495 @@
+<!doctype html>
+<html>
+<head>
+  <title>Državna izborna komisija</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/chosen.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<!--[if lte IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- Sidebar menu wrapper(need this for sidebar section) -->
+<div class="sidebar-wrapper">
+  <div class="fixed-top-bar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="back-link">
+            <a href="index.html">
+              <span class="icon">
+                <i class="fas fa-home"></i>
+              </span>
+              <span class="text">
+                DIK
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="municipality-picker">
+            <select data-placeholder="Izaberi opštinu" id="municipality-picker-select" tabindex="2">
+              <option value=""></option>
+              <option value="Andrijevica">Andrijevica</option>
+              <option value="Bar">Bar</option>
+              <option value="Berane">Berane</option>
+              <option value="Bijelo Polje">Bijelo Polje</option>
+              <option value="Berane">Berane</option>
+              <option value="Budva">Budva</option>
+              <option value="Cetinje">Cetinje</option>
+              <option value="Danilovgrad">Danilovgrad</option>
+              <option value="Gusinje">Gusinje</option>
+              <option value="Herceg Novi">Herceg Novi</option>
+              <option value="Kolašin">Kolašin</option>
+              <option value="Kotor">Kotor</option>
+              <option value="Mojkovac">Mojkovac</option>
+              <option value="Nikšić">Nikšić</option>
+              <option value="Petnjica">Petnjica</option>
+              <option value="Plav">Plav</option>
+              <option value="Plužine">Plužine</option>
+              <option value="Pljevlja">Pljevlja</option>
+              <option value="Podgorica">Podgorica</option>
+              <option value="Rožaje">Rožaje</option>
+              <option value="Šavnik">Šavnik</option>
+              <option value="Tivat">Tivat</option>
+              <option value="Ulcinj">Ulcinj</option>
+              <option value="Žabljak">Žabljak</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <div class="lang-picker">
+              <span class="lang-picker-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="text">
+                  ME
+                </span>
+                <span class="icon">
+                  <i class="fas fa-angle-down"></i>
+                </span>
+              </span>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+              <a class="lang active" href="#">En</a>
+              <a class="lang" href="#">Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="main-header">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="logo">
+            <a href="index.html">
+                <span class="image">
+                  <img src="images/dik-logo.png" alt="">
+                </span>
+              <span class="text">
+                  <span class="up">
+                    Državna izborna komisija
+                  </span>
+                  <span class="down">
+                    Crne Gore
+                  </span>
+                </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nav-col">
+          <div class="navigation-section">
+            <div class="navigation-section-wrapper">
+              <div class="navigation">
+                <ul>
+                  <li>
+                    <a href="#">Početna</a>
+                  </li>
+                  <li class="has-dropdown active">
+                    <a href="#">Aktuelnosti</a>
+                    <div class="toggle-button">
+                      <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul class="dropdown">
+                      <li><a href="#">Vijesti</a></li>
+                      <li><a href="#">Saopštenja</a></li>
+                      <li class="has-dropdown active">
+                        <a href="#">Sjednice</a>
+                        <div class="toggle-button">
+                          <i class="fas fa-angle-down"></i>
+                        </div>
+                        <ul class="dropdown">
+                          <li><a href="#">Saziv</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="has-dropdown">
+                    <a href="#">Izbori 2018</a>
+                    <div class="toggle-button">
+                      <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul class="dropdown">
+                      <li><a href="#">Odluke</a></li>
+                      <li><a href="#">Kalendar</a></li>
+                      <li><a href="#">Službena ovjašćenja</a></li>
+                      <li><a href="#">Analitičke kartice i putni nalozi</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-dropdown">
+                    <a href="#">Dokumenta</a>
+                    <div class="toggle-button">
+                      <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul class="dropdown">
+                      <li><a href="#">Mišljenja</a></li>
+                      <li><a href="#">Zaključci</a></li>
+                      <li><a href="#">Odluke</a></li>
+                      <li><a href="#">Pravilnici</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Kontakt</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="m-nav">
+                <button class="sidebar-toggle" type="button" data-pos="right" data-nav="#sidebar"
+                        data-effect="sidebar-effect-4" aria-hidden="true">
+                  <i class="fa fa-bars"></i>
+                </button>
+                <div id="sidebar" class="sidebar-container">
+                  <div class="sidebar-container-body">
+                    <ul>
+                      <li class="active">
+                        <a href="#">Početna</a>
+                      </li>
+                      <li class="has-dropdown">
+                        <a href="#">Aktuelnosti</a>
+                        <div class="toggle-button">
+                          <i class="fas fa-angle-down"></i>
+                        </div>
+                        <ul class="dropdown">
+                          <li><a href="#">Vijesti</a></li>
+                          <li><a href="#">Saopštenja</a></li>
+                          <li class="has-dropdown">
+                            <a href="#">Sjednice</a>
+                            <div class="toggle-button">
+                              <i class="fas fa-angle-down"></i>
+                            </div>
+                            <ul class="dropdown">
+                              <li><a href="#">Saziv</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="has-dropdown">
+                        <a href="#">Izbori 2018</a>
+                        <div class="toggle-button">
+                          <i class="fas fa-angle-down"></i>
+                        </div>
+                        <ul class="dropdown">
+                          <li><a href="#">Odluke</a></li>
+                          <li><a href="#">Kalendar</a></li>
+                          <li><a href="#">Službena ovjašćenja</a></li>
+                          <li><a href="#">Analitičke kartice i putni nalozi</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-dropdown">
+                        <a href="#">Dokumenta</a>
+                        <div class="toggle-button">
+                          <i class="fas fa-angle-down"></i>
+                        </div>
+                        <ul class="dropdown">
+                          <li><a href="#">Mišljenja</a></li>
+                          <li><a href="#">Zaključci</a></li>
+                          <li><a href="#">Odluke</a></li>
+                          <li><a href="#">Pravilnici</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Kontakt</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="search">
+                <form role="search" method="get" id="searchform" action="">
+                  <input name="s" type="text" class="search-input" placeholder="Pretraga..." autocomplete="off"
+                         value="">
+                  <input type="submit" class="search-submit">
+                  <span class="search-icon"><i class="fas fa-search"></i></span>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="header-background">
+    <div class="header-background-image" style="background-image: url('images/dik-bg.jpg'); "></div>
+  </div>
+  <div class="core">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="main-content">
+            <div class="content-header">
+              <div class="header-breadcrumb">
+                <ul>
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active"><a href="#">Data</a></li>
+                </ul>
+              </div>
+              <div class="content-title">
+                <h1>Lorem ipsum dolor sit amet</h1>
+              </div>
+            </div>
+            <div class="content-section">
+              <div class="profiles">
+                <div id="filters" class="button-group">
+                  <button data-filter="*" class="is-checked">Svi</button>
+                  <button data-filter=".predsjednik">Predsjednik</button>
+                  <button data-filter=".sakretar">Sakretar</button>
+                  <button data-filter=".clanovi">Članovi</button>
+                </div>
+                <div class="isotope">
+                  <div class="isotope-sizer"></div>
+                  <div class="item predsjednik">
+                    <div class="profile-wrap">
+                      <div class="image">
+                        <img src="images/profile.png">
+                      </div>
+                      <div class="name">
+                        Budimir Šaranović
+                      </div>
+                      <div class="position">
+                        Predsjednik
+                      </div>
+                      <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias aperiam aspernatur atque
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item clanovi">
+                    <div class="profile-wrap">
+                      <div class="image">
+                        <img src="images/profile.png">
+                      </div>
+                      <div class="name">
+                        Budimir Šaranović
+                      </div>
+                      <div class="position">
+                        Predsjednik
+                      </div>
+                      <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias aperiam aspernatur atque
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item predsjednik">
+                    <div class="profile-wrap">
+                      <div class="image">
+                        <img src="images/profile.png">
+                      </div>
+                      <div class="name">
+                        Budimir Šaranović
+                      </div>
+                      <div class="position">
+                        Predsjednik
+                      </div>
+                      <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias aperiam aspernatur atque
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item predsjednik">
+                    <div class="profile-wrap">
+                      <div class="image">
+                        <img src="images/profile.png">
+                      </div>
+                      <div class="name">
+                        Budimir Šaranović
+                      </div>
+                      <div class="position">
+                        Predsjednik
+                      </div>
+                      <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias aperiam aspernatur atque
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item predsjednik">
+                    <div class="profile-wrap">
+                      <div class="image">
+                        <img src="images/profile.png">
+                      </div>
+                      <div class="name">
+                        Budimir Šaranović
+                      </div>
+                      <div class="position">
+                        Predsjednik
+                      </div>
+                      <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias aperiam aspernatur atque
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 sidebar-right">
+          <div class="widget widget-map">
+            <div class="widget-header">
+              <h3>
+                <span>Opštinske izborne komisije </span>
+              </h3>
+              <span class="icon">
+                 <i class="fas fa-globe"></i>
+                </span>
+            </div>
+            <div class="widget-content">
+
+            </div>
+          </div>
+
+          <div class="widget widget-list">
+            <div class="widget-header">
+              <h3>
+                <span>Najnovija dokumenta </span>
+              </h3>
+              <span class="icon">
+                  <i class="far fa-newspaper"></i>
+                </span>
+            </div>
+            <div class="widget-content">
+              <ul>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                </li>
+              </ul>
+              <div class="read-more">
+                <a href="#">
+                  Pogledaj sva dokumenta
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="footer-widget links">
+            <div class="footer-widgets-content">
+              <h4 class="title">
+                <a href="#">O komisiji</a>
+              </h4>
+              <ul>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Sastav Komisije</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Poslovnik o radu</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-widget links">
+            <div class="footer-widgets-content">
+              <h4 class="title">
+                <a href="#">Legislativa</a>
+              </h4>
+              <ul>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Zakoni</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Podzakonska akta</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-widget links">
+            <div class="footer-widgets-content">
+              <h4 class="title">
+                <a href="#">Arhiva</a>
+              </h4>
+              <ul>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Izbori za Predsjednika Crne Gore</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Izbori za poslanike u Skupštinu Crne Gore</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-widget info">
+            <div class="icons">
+              <div><a href="#"><i class="fab fa-twitter"></i></a></div>
+              <div><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+              <div><a href="#"><i class="fab fa-youtube"></i></a></div>
+              <div><a href="#"><i class="fab fa-instagram"></i></a></div>
+            </div>
+            <div class="access-to-information">
+              <a href="#">
+                <img src="images/access-to-information.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="text">
+            © 2016 www.dik.co.me / All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="js/chosen.jquery.min.js" type="text/javascript"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="js/isotope.js" type="text/javascript"></script>
+<script src="js/sidebar-menu.js" type="text/javascript"></script>
+<script src="js/scripts.js" type="text/javascript"></script>
+
+</body>
+</html>
